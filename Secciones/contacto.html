@@ -7,80 +7,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
 
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <img class="header__logo" src="../assets/LOGO-LF.png" alt="logo del sitio">
-            <ul class=header__list>
-                <li class="header__item"><a href="../Index.html">Inicio</a></li>              
-                <li class="header__item"><a href="Portfolio.html"><span>Portfolio</span></a>
-                    <ul class="header__list header__subitem--list">
-                    </ul>
-                </li>
-                <li class="header__item"><a href=proyectos.html><span>Proyectos</span></a>
-                    <ol class="header__list heade__subitem--list"> 
-                    </ol>
-                </li>
-                <li class="header__item"><a href=clases.html/>Clases</a></li> 
-                <li class="header__item"><a href=nosotros.html>Nosotros</a></li>
-                <li class="header__item"><a href=contacto.html>Contacto</a></li>
-            </ul>                 
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid d-flex justify-content-end">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/LOGO-LF (2).png" alt="" width="150">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Portfolio.html"> Portfolio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html"> Proyectos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html"> Nosotros </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html"> Contacto </a>
+              </li>
+             
+            <form class="d-flex">
+              <input class="form-control me-2" type="Buscar" placeholder="Escribe un texto..." aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+      </nav>
     </header>
-    <section>
-        <div class="hero">
-            <h1 class="hero_h1">Contacto</h1>
-            <p class="hero__p">Me encantaría saber como puedo ayudar...</p>
-        </div>
-    </section>
-        </nav>
-        <main>
-            
-            <section class="section_clases"> 
-            <p class="hero__p">Respondere lo antes posible</p>
+   
+   
 
-            </section>
+  <div class="card bg-light text-white style="max-width: 540px;">
+      <img src="../assets/KIA/Kia7.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h1 class="display-2" class="card-title" >Conóceme</h1>
+        <p class="display-5" class="card-text">Espero puedas conocerme un poco en esta sección.</p>
+  </div>
+
+                   
+  
+  
+  
+  <h1 class="h2--clases">Formulario de contacto</h1>
             
-                <fieldset>
-                    <legend>Formulario de contacto</legend>
-                
-                <div><input type="text" placeholder="Escriba su nombre"></div>
-                <div><input type="number" placeholder="Escriba su número"></div>
-                <div><input type="password" placeholder="Escriba su contraseña"></div>
-                <div><input type="email" placeholder="Escriba su Email" name="" id="" pa></div>
-                <div><textarea name="Nombre" id="" cols="30" rows="10"></textarea><br></div>
-                <div>
-                    <label for="sexo">Sexo</label>
-                    <input type="radio" name="sexo" id="sexo" value="Hombre">Hombre
-                    <input type="radio" name="sexo" id="sexo" value="Mujer"> Mujer
-                </div>
-                <div>
-                    <label for="condiciones">Acepta terminos</label>
-                    <input type="checkbox" name="Terminos" id="condiciones" value="1">
-                </div>
-                <div>
-                    <label for="cursos">Intruduzca su preferencia</label>
-                    <select name="Que curso te interesa?" id="cursos">
-                        <option value="1">Fotografía Automotriz</option>
-                        <option value="2">Fotografía FineArte</option>
-                        <option value="3">Fotografía Social</option>
-                    </select>
-                </div>
-               
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar campos">
-                    <input type="button" value="NO Hago Nada">
-                </fieldset>                    
-            </form>                  
-           </section>
-        </main>
-    <footer>    
+    <form class="formulario bg-light text-black" >            
+           <div class="row g-3 align-items-center">
+                <div class="col-auto">
+              <label for="exampleInputEmail1" class="form-label">Nombre</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"> </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+              <label for="exampleInputEmail1" class="form-label">Apellido</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"> </div>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Núnca revelaremos tu información.</div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+            <label for="exampleInputEmail1" class="form-label">Contraseña</label>
+            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="passwordHelpInline" class="form-text">
+      Debe tener de 8-20 characteres como máximo.
+    </span>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Acepto los terminos</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    
+    
+<footer>    
         <sectio>
             <div class="footer_content">
              <h4 class="footer__text">All Right Reserved to Lucas Ariel Ferreyra</h4>
         </div>
-     </footer>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>            
 </body>
 </html>

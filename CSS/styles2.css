@@ -137,14 +137,13 @@ h1{
 }
 
 .hero__button{
-    display: flex;
-    position:center;
-    padding: 10px 40px 10px 30px;
-    background-color: yellowgreen;
-    border-radius: 50px;
-    border-style: none;
-    align-self: center;
-
+        display: flexbox;
+        position:center;
+        padding: 10px 40px 10px 30px;
+        background-color: rgba(0, 255, 242, 0.57);
+        border-radius: 50px;
+        border-style: none;
+        align-self: center;
 } 
 
 .hero__p{

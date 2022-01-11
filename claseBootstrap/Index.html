@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Ferreyra - Fotografía Automotriz</title>
+    <link rel="stylesheet" href="./CSS/styles2.css">
+   
+    
+</head>
+<body>
+    <header class="header">
+       <div class="header__contenedor"> 
+        <img class="header__logo" src="./assets/LOGO-LF (2).png" alt="logo del sitio">
+        <nav class="menu">
+            <li class="header__item"><a href="#">Inicio</a></li>              
+            <li class="header__item"><a href="secciones/Portfolio.html"">Portfolio</a></li>
+            <li class="header__item"><a href=Secciones/Proyectos.html><span>Proyectos</span></a></li>
+            <li class="header__item"><a href=Secciones/clases.html>Clases</a></li> 
+            <li class="header__item"><a href=Secciones/nosotros.html>Nosotros</a></li>
+            <li class="header__item"><a href=Secciones/contacto.html>Contacto</a></li>       
+        </nav>
+       </div>
+    </header>
+<main>
+    <section>
+        <div class="hero">
+            <h1 class="hero_h1">¡Bienvenido a mi sitio!</h1>
+            <p class="hero__p">Soy Lucas Ferreyra, un apasionado de la fotografia automotriz y quiero compartir mis trabajos contigo.</p>
+            <button class="hero__button">+ INFO</button>
+        </div>
+    </section>
+    
+    <section class="section__portfolio">
+            <h2 class=h2--portfolio>Portfolio</h2> 
+              <p>Visita la galería de trabajos que he realizado con múltiples marcas</p>
+       <div class=portfolio--imagen>            
+            <img src="./assets/Home-Portfolio/kia.jpg">
+            <img src="./assets/Home-Portfolio/ram.jpg">
+            <img src="./assets/Home-Portfolio/Volkswagen.jpg">
+       </div>  
+            
+    </section>       
+    <section class="section__clases">
+        <h2 class="h2--clases">Clases</h2> 
+          <p class="p--clases">Tengo varios cursos que te pueden interesar, <br>
+            en ellos podrás conocer como realizar <br> excelentes fotografías,
+            incluso con tu móvil. <br> Mira el video</p>
+        <video src="./assets/tiesto.mp4" controls>
+            <code> Tu navegador no soporta video</code>
+        </video>
+    </section>
+    <section class="section__portfolio">
+    <h2 class=h2--portfolio>Proyectos</h2> 
+      <p>He tenido múltiples participaciones en distintos proyectos, de terceros y propios. <br>
+          Visita la sección!</p>
+      <div class=proyectos--imagen>            
+        <img src="./assets/Home-Portfolio/kia.jpg">
+        <img src="./assets/Home-Portfolio/ram.jpg">
+        <img src="./assets/Home-Portfolio/Volkswagen.jpg">
+      </div>
+    </section>
+    <section class="form">
+        <h2 class="h2--clases"> Contacto</h2>
+            <p> Respondere lo antes posible</p>
+        
+           
+        
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                
+                <div><input type="text" placeholder="Escriba su nombre"></div>
+                <div><input type="number" placeholder="Escriba su número"></div>
+                <div><input type="password" placeholder="Escriba su contraseña"></div>
+                <div><input type="email" placeholder="Escriba su Email" name="" id="" pa></div>
+                <div><textarea name="Nombre" id="" cols="30" rows="10"></textarea><br></div>
+                <div>
+                    <label for="sexo">Sexo</label>
+                    <input type="radio" name="sexo" id="sexo" value="Hombre">Hombre
+                    <input type="radio" name="sexo" id="sexo" value="Mujer"> Mujer
+                </div>
+                <div>
+                    <label for="condiciones">Acepta terminos</label>
+                    <input type="checkbox" name="Terminos" id="condiciones" value="1">
+                </div>
+                <div>
+                    <label for="cursos">Intruduzca su preferencia</label>
+                    <select name="Que curso te interesa?" id="cursos">
+                        <option value="1">Fotografía Automotriz</option>
+                        <option value="2">Fotografía FineArte</option>
+                        <option value="3">Fotografía Social</option>
+                    </select>
+                </div>
+               
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar campos">
+                    <input type="button" value="NO Hago Nada">
+                </fieldset>                    
+            </form>
+                              
+    </section>
+         
+    </main>
+
+     <footer>    
+        <sectio>
+            <div class="footer_content">
+             <h4 class="footer__text">All Right Reserved to Lucas Ariel Ferreyra</h4>
+        </div>
+     </footer>
+        
+</body>
+
+</html>

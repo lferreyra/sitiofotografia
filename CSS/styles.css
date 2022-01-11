@@ -115,13 +115,15 @@ h1{
 
  .imagen{
     flex: 1 1 50%;
-    
+
 }
+
 
 .hero{
     height: 130vh;
     background-color: white;
-    background-image: url("../assets/KIA/Kia7.jpg");
+    background-image: url("../assets/KIA/Kia7.jpg") whidt: 100% hight: 50% ;
+    height: 100vh;;
     display:flex;
     background-size: cover;
     position: relative;    
@@ -132,10 +134,20 @@ h1{
        
 }
 
+.hero_h1{
+    color:#000000
+}
+.hero_h4{
+    font-style: italic;
+    color: #000;
+    padding: 0px 0px 0px 50px
+    
+}
+
 .hero__portfolio{
     height: 130vh;
     width: repeat;
-    background-color: white;
+    background-color: black;
     background: url("../assets/KIA/kia3.jpg");
     display:flex;
     background-size: cover;
@@ -148,10 +160,10 @@ h1{
 }
 
 .hero__button{
-    display: flex;
+    display: flexbox;
     position:center;
     padding: 10px 40px 10px 30px;
-    background-color: yellowgreen;
+    background-color: rgba(0, 255, 242, 0.57);
     border-radius: 50px;
     border-style: none;
     align-self: center;
@@ -162,6 +174,12 @@ h1{
     position: absolute;
     padding: 130px 10px 10px 50px;
     align-self:flex-start;
+}
+
+.tracking-in-contract-bck-top {
+        -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
 }
 
 .section__portfolio {
@@ -213,6 +231,13 @@ h1{
     grid-auto-rows: 150px;
     padding: 20px;
     grid-gap: 10px;
+}
+
+.formulario{
+    display: flexbox;
+    align-items: center;
+    padding: 10px 30px 10px 30px
+
 }
 
 .gallery__img{

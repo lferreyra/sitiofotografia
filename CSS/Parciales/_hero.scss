@@ -1,0 +1,54 @@
+@import "./variables";
+.hero{
+    height: 130vh;
+    background-color: white;
+    background-image: url("../assets/KIA/Kia7.jpg");
+    height: 100vh;
+    display:flex;
+    background-size: cover;
+    position: relative;    
+    text-align: left;
+    flex-direction: column;
+    align-items: left;
+    padding: 0px 0px 0px 30px;
+
+      
+    &__portfolio{ 
+        height: 130vh;
+        width: repeat;
+        background-color: black;
+        background: url("../assets/KIA/kia3.jpg");
+        display:flex;
+        background-size: cover;
+        position: relative;    
+        text-align: left;
+        flex-direction: column;
+        align-items: left;
+        padding: 0px 0px 0px 30px;
+    }
+
+    
+    &__button{
+        display: flexbox;
+        position:center;
+        padding: 10px 40px 10px 30px;
+        background-color: rgba(0, 255, 242, 0.57);
+        border-radius: 50px;
+        border-style: none;
+        align-self: center;
+    
+    } 
+    
+    &__p{
+        position: absolute;
+        padding: 130px 10px 10px 50px;
+        align-self:flex-start;
+    }
+
+    &_h4{
+        font-style: italic;
+        color: #000;
+        padding: 0px 0px 0px 50px;
+    }
+    
+}

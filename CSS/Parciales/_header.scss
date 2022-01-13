@@ -1,0 +1,48 @@
+@import "./variables";
+
+.header{
+    display: flex;
+    padding: 2px 0px 2px 0px;
+    border: solid 0px black;
+    margin: 10px 10px 10px 10px; 
+    justify-content:space-between;
+    width: 100%;
+    height: 50px;
+    background: $bg-black;
+    color: $bg-black; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;                
+    
+    &__logo{
+       width: auto;
+       height: 100%;    
+    }
+
+    &__nav{
+        align-items: right;
+        background-color: $bg-black;
+        display: flex;    
+    }
+
+    &__list{
+        list-style:none;
+        display: flex;
+        right: 0px;
+        justify-content: space-between;
+    }
+
+    &__item{
+        flex-direction: row;
+        margin: 0px 1rem;
+        font-size: 15px;
+        font-style:normal;
+        font-family:sans-serif;
+        padding: 15px;
+        display: inline;
+    
+    }
+
+      
+}

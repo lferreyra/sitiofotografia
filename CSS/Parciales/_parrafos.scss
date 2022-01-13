@@ -1,0 +1,20 @@
+p{
+    color:rgb(255, 255, 255);
+    line-height: 1.6;
+    font-size: 15px;
+    font-style:italic;
+    font-family: "open-sans", sans-serif;
+    padding: 25px 50px 20px 50px;
+    text-align:justify;
+
+    &--clases{
+        color: black; 
+        font-size: 15px;
+        font-style:italic;
+        font-family: "open-sans", sans-serif;
+        padding: 25px 50px 20px 50px;
+        text-align:justify;
+    
+     }
+    
+ }

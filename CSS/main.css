@@ -31,6 +31,8 @@ html {
   color: black;
   position: -webkit-sticky;
   position: sticky;
+  width: auto;
+  height: 120%;
   top: 0;
   left: 0;
   z-index: 100;
@@ -76,6 +78,72 @@ html {
 }
 
 /* FIN del header */
+/* Inicio NAVBAR */
+.left-side,
+.right-side {
+  height: 100vh;
+}
+
+.navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-nav > li:hover {
+  border-bottom: 1px solid #83ff00;
+}
+
+.navbar-nav > .active {
+  border-bottom: 1px solid #fff;
+}
+
+.left-side img {
+  padding-top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.shape {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c4c4c46d), color-stop(70%, #3c3b3b67));
+  background: linear-gradient(to bottom, #c4c4c46d, #3c3b3b67 70%);
+  position: absolute;
+  -webkit-clip-path: linear-gradient(500px 500px at 10% 5%);
+}
+
+.right-side {
+  padding-top: 150px;
+}
+
+.right-side h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.right-side p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn.order-button {
+  background: transparent;
+  border: 2px solid #83ff00;
+  color: #83ff00;
+  border-radius: 30%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.btn.order-button:hover {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* FIN del NAVBAR */
 /* Inicio Hero */
 .hero {
   height: 130vh;
@@ -87,7 +155,7 @@ html {
   display: flex;
   background-size: cover;
   position: relative;
-  text-align: left;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -108,7 +176,7 @@ html {
   display: flex;
   background-size: cover;
   position: relative;
-  text-align: left;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -123,11 +191,12 @@ html {
   display: flexbox;
   position: center;
   padding: 10px 40px 10px 30px;
-  background-color: rgba(0, 255, 242, 0.57);
-  border-radius: 50px;
-  border-style: none;
-  -ms-flex-item-align: center;
-      align-self: center;
+  background: transparent;
+  border: 2px solid #83ff00;
+  color: #83ff00;
+  border-radius: 30%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .hero__p {
@@ -144,6 +213,11 @@ html {
 }
 
 /* Fin de Hero */
+/* Inicio de portfolio */
+.section__portfolio{
+  background-color: #000000;
+
+}/* Fin de portfolio */
 /* Inicio de Tipografia */
 h1 {
   color: white;
@@ -173,22 +247,30 @@ h2--clases {
 /* FIn de Tipografia */
 /* elementos de parrafos */
 p {
-  color: white;
+  color: white
   line-height: 1.6;
   font-size: 15px;
-  font-style: italic;
+  font-style: normal;
   font-family: "open-sans", sans-serif;
   padding: 25px 50px 20px 50px;
-  text-align: justify;
+  text-align: center;
+}
+
+p>card-text {
+  color: #000;
 }
 
 p--clases {
   color: black;
   font-size: 15px;
-  font-style: italic;
+  font-style: normal;
   font-family: "open-sans", sans-serif;
   padding: 25px 50px 20px 50px;
-  text-align: justify;
+  text-align: center;
+}
+.p--lead{
+  color: white;
+
 }
 
 /* FIN de elementos de parrafos */

@@ -1,20 +1,24 @@
 @import "./variables";
+@import "./responsive-mixins";
 
-.header{
+.header {
     display: flex;
     padding: 2px 0px 2px 0px;
     border: solid 0px black;
-    margin: 10px 10px 10px 10px; 
+    margin: 10px 10px 10px 10px;
     justify-content:space-between;
+    text-align: center;
     width: 100%;
     height: 50px;
     background: $bg-black;
-    color: $bg-black; 
-    position: sticky;
+    color: $bg-black;
+    position:sticky;
+    width: auto;
+    height: 120%;
     top: 0;
     left: 0;
     z-index: 100;                
-    
+
     &__logo{
        width: auto;
        height: 100%;    
@@ -32,7 +36,7 @@
         right: 0px;
         justify-content: space-between;
     }
-
+    
     &__item{
         flex-direction: row;
         margin: 0px 1rem;

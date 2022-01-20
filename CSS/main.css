@@ -13,6 +13,18 @@ html {
   background-color: #000000;
 }
 
+.section__portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  background-color: black;
+}
+
+.Footer__text {
+  text-align: center;
+}
+
 /* Componentes varios */
 /* elementos delheader */
 .header {
@@ -25,6 +37,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
   width: 100%;
   height: 50px;
   background: black;
@@ -79,7 +92,7 @@ html {
 
 /* FIN del header */
 /* Inicio NAVBAR */
-.left-side,
+.left-side
 .right-side {
   height: 100vh;
 }
@@ -88,29 +101,17 @@ html {
   color: #fff;
 }
 
-.navbar-nav > li:hover {
+.navbar-nav > li > a > li:hover {
   border-bottom: 1px solid #83ff00;
 }
 
-.navbar-nav > .active {
+.navbar-nav > li > a > .active {
   border-bottom: 1px solid #fff;
 }
 
 .left-side img {
   padding-top: 0px;
   width: 100%;
-  height: 100%;
-}
-
-.shape {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c4c4c46d), color-stop(70%, #3c3b3b67));
-  background: linear-gradient(to bottom, #c4c4c46d, #3c3b3b67 70%);
-  position: absolute;
-  -webkit-clip-path: linear-gradient(500px 500px at 10% 5%);
 }
 
 .right-side {
@@ -204,6 +205,7 @@ html {
   padding: 130px 10px 10px 50px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  text-align: center;
 }
 
 .hero_h4 {
@@ -213,11 +215,6 @@ html {
 }
 
 /* Fin de Hero */
-/* Inicio de portfolio */
-.section__portfolio{
-  background-color: #000000;
-
-}/* Fin de portfolio */
 /* Inicio de Tipografia */
 h1 {
   color: white;
@@ -247,17 +244,13 @@ h2--clases {
 /* FIn de Tipografia */
 /* elementos de parrafos */
 p {
-  color: white
+  color: white;
   line-height: 1.6;
   font-size: 15px;
   font-style: normal;
   font-family: "open-sans", sans-serif;
   padding: 25px 50px 20px 50px;
   text-align: center;
-}
-
-p>card-text {
-  color: #000;
 }
 
 p--clases {
@@ -268,9 +261,9 @@ p--clases {
   padding: 25px 50px 20px 50px;
   text-align: center;
 }
-.p--lead{
-  color: white;
 
+p .p--lead {
+  color: white;
 }
 
 /* FIN de elementos de parrafos */
@@ -280,4 +273,168 @@ p--clases {
 }
 
 /* Fin de Main secundario */
+/* social icons*/
+body {
+  background-color: #ddd;
+  padding: 100px 20px 20px 20px;
+}
+
+.social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -10px;
+}
+
+.social-buttons__button {
+  margin: 10px 5px 0;
+}
+
+.social-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.social-button::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.social-button:focus, .social-button:hover {
+  color: #fff;
+}
+
+.social-button:focus::after, .social-button:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+
+.social-button i,
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.social-button i {
+  font-size: 28px;
+}
+
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+
+.social-button--mail {
+  color: #0072c6;
+}
+
+.social-button--mail::after {
+  background: #0072c6;
+}
+
+.social-button--facebook {
+  color: #3b5999;
+}
+
+.social-button--facebook::after {
+  background: #3b5999;
+}
+
+.social-button--linkedin {
+  color: #0077b5;
+}
+
+.social-button--linkedin::after {
+  background: #0077b5;
+}
+
+.social-button--github {
+  color: #6e5494;
+}
+
+.social-button--github::after {
+  background: #6e5494;
+}
+
+.social-button--codepen {
+  color: #212121;
+}
+
+.social-button--codepen::after {
+  background: #212121;
+}
+
+.social-button--steam {
+  color: #7da10e;
+}
+
+.social-button--steam::after {
+  background: #7da10e;
+}
+
+.social-button--snapchat {
+  color: #eec900;
+}
+
+.social-button--snapchat::after {
+  background: #eec900;
+}
+
+.social-button--twitter {
+  color: #55acee;
+}
+
+.social-button--twitter::after {
+  background: #55acee;
+}
+
+.social-button--instagram {
+  color: #e4405f;
+}
+
+.social-button--instagram::after {
+  background: #e4405f;
+}
+
+.social-button--npmjs {
+  color: #c12127;
+}
+
+.social-button--npmjs::after {
+  background: #c12127;
+}
+
+/* FIN social icons*/
+/* MIXIN*/
 /*# sourceMappingURL=main.css.map */

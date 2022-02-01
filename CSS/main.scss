@@ -21,8 +21,11 @@
 /* Main secundario */
 @import "../CSS/Parciales/section-main";
 /* Fin de Main secundario */
-/* social icons*/
-@import "../CSS/Parciales/social-icons";
-/* FIN social icons*/
+
 /* MIXIN*/
-@import "../CSS/Parciales/responsive-mixins"
+@import "../CSS/Parciales/responsive-mixins";
+/* social CARDS*/
+@import "../CSS/Parciales/cards";
+
+/* Timel */
+@import "../CSS/Parciales/timeline"

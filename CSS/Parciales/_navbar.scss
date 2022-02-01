@@ -1,13 +1,17 @@
 .left-side
 .right-side {
-    height: 100vh;
+    height: 0vh;
 }
 
+.navbar{
+    display: flex;
+}
 .navbar-nav>li>a {
     color: #fff;
+    font-size: 1.5rem;
 
 
-    &>li:hover {
+    &>nav-link:hover {
     border-bottom: 1px solid #83ff00;
     }
 

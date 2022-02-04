@@ -1,9 +1,9 @@
 h1{
     color:rgb(255, 255, 255); 
-    font-size: 50px;
+    font-size: 5,25rem;
     font-style:normal;
     font-family: "open-sans", sans-serif;
-    padding: 50px;
+    padding: 0px;
 } 
  /* primer comentario*/ 
 
@@ -12,13 +12,10 @@ h1{
     font-size: 30px;
     font-style:normal;
     font-family: "open-sans", sans-serif;
-    padding: 15px;
+    padding: 0px;
 
-    &--clases{
-        color: black; 
-        font-size: 30px;
-        font-style:normal;
-        font-family: "open-sans", sans-serif;
-        padding: 15px;
-    }
+
+}
+.text-center {
+    text-align: center!important;
 }

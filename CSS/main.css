@@ -31,9 +31,7 @@ html {
   padding: 5rem 0rem 5rem 0rem;
 }
 
-H2 > display-6 {
-  color: black;
-}
+
 
 /* Componentes varios */
 /* elementos delheader */
@@ -235,10 +233,10 @@ H2 > display-6 {
 /* Inicio de Tipografia */
 h1 {
   color: white;
-  font-size: 50px;
+  font-size: 5.25rem;
   font-style: normal;
   font-family: "open-sans", sans-serif;
-  padding: 50px;
+  padding: 0px;
 }
 
 /* primer comentario*/
@@ -250,21 +248,7 @@ h2 {
   padding: 15px;
 }
 
-h2>diplay-6 {
-  color: black;
-  font-size: 30px;
-  font-style: normal;
-  font-family: "open-sans", sans-serif;
-  padding: 15px;
-}
 
-h2--clases {
-  color: black;
-  font-size: 30px;
-  font-style: normal;
-  font-family: "open-sans", sans-serif;
-  padding: 15px;
-}
 
 /* FIn de Tipografia */
 /* elementos de parrafos */
@@ -274,16 +258,7 @@ p {
   font-size: 15px;
   font-style: normal;
   font-family: "open-sans", sans-serif;
-  padding: 25px 50px 20px 50px;
-  text-align: center;
-}
-
-p--clases {
-  color: black;
-  font-size: 15px;
-  font-style: normal;
-  font-family: "open-sans", sans-serif;
-  padding: 25px 50px 20px 50px;
+  padding: 0px 50px 0px 50px;
   text-align: center;
 }
 
@@ -292,7 +267,7 @@ p .p--lead {
   font-size: 15px;
   font-style: normal;
   font-family: "open-sans", sans-serif;
-  padding: 25px 50px 20px 50px;
+  padding: 0px 50px 0px 50px;
   text-align: center;
 }
 
@@ -305,19 +280,8 @@ p .p--lead {
 /* Fin de Main secundario */
 /* MIXIN*/
 /* social CARDS*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div,
-input,
-p,
-a {
-  font-family: "Open Sans";
-  margin: 0px;
-}
+
+
 
 a,
 a:hover,
@@ -332,6 +296,7 @@ body {
 .container-fluid,
 .container {
   max-width: 1200px;
+ 
 }
 
 .card-container {

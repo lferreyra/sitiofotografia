@@ -6,81 +6,240 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
 
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <img class="header__logo" src="../assets/LOGO-LF.png" alt="logo del sitio">
-            <ul class=header__list>
-                <li class="header__item"><a href="../Index.html">Inicio</a></li>              
-                <li class="header__item"><a href="Portfolio.html"><span>Portfolio</span></a>
-                    <ul class="header__list header__subitem--list">
-                    </ul>
-                </li>
-                <li class="header__item"><a href=proyectos.html><span>Proyectos</span></a>
-                    <ol class="header__list heade__subitem--list"> 
-                    </ol>
-                </li>
-                <li class="header__item"><a href=clases.html/>Clases</a></li> 
-                <li class="header__item"><a href=nosotros.html>Nosotros</a></li>
-                <li class="header__item"><a href=contacto.html>Contacto</a></li>
-            </ul>                 
-        </nav>
-    </header>
-    <section>
-        <div class="hero">
-            <h1 class="hero_h1">Contacto</h1>
-            <p class="hero__p">Me encantaría saber como puedo ayudar...</p>
-        </div>
-    </section>
-        </nav>
-        <main>
-            
-            <section class="section_clases"> 
-            <p class="hero__p">Respondere lo antes posible</p>
+ <header> <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Index.html">
+        <img src="../assets/LOGO-LF.png" alt="" width="150">
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html"> Portfolio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clases.html"> Clases </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html"> Proyectos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html"> Nosotros </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html"> Contacto </a>
+          </li>
+      </div>
+ </nav>
+</header> <!-- FIN Header-->
 
-            </section>
-            
-                <fieldset>
-                    <legend>Formulario de contacto</legend>
-                
-                <div><input type="text" placeholder="Escriba su nombre"></div>
-                <div><input type="number" placeholder="Escriba su número"></div>
-                <div><input type="password" placeholder="Escriba su contraseña"></div>
-                <div><input type="email" placeholder="Escriba su Email" name="" id="" pa></div>
-                <div><textarea name="Nombre" id="" cols="30" rows="10"></textarea><br></div>
-                <div>
-                    <label for="sexo">Sexo</label>
-                    <input type="radio" name="sexo" id="sexo" value="Hombre">Hombre
-                    <input type="radio" name="sexo" id="sexo" value="Mujer"> Mujer
-                </div>
-                <div>
-                    <label for="condiciones">Acepta terminos</label>
-                    <input type="checkbox" name="Terminos" id="condiciones" value="1">
-                </div>
-                <div>
-                    <label for="cursos">Intruduzca su preferencia</label>
-                    <select name="Que curso te interesa?" id="cursos">
-                        <option value="1">Fotografía Automotriz</option>
-                        <option value="2">Fotografía FineArte</option>
-                        <option value="3">Fotografía Social</option>
-                    </select>
-                </div>
-               
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar campos">
-                    <input type="button" value="NO Hago Nada">
-                </fieldset>                    
-            </form>                  
-           </section>
-        </main>
-    <footer>    
-        <sectio>
-            <div class="footer_content">
-             <h4 class="footer__text">All Right Reserved to Lucas Ariel Ferreyra</h4>
+    <div class="container-fluid d-flex min-vh-100" lc-helper="background" style="background:url(../assets/HEADER-BG/DSCN0005\ \(1\).jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
+      <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+        <div class="lc-block mb-4">
+          <div editable="rich">
+            <h1 class="display-1 fw-bolder">¡Contacto!</h1>
+          </div>
         </div>
-     </footer>
-</body>
-</html>
+
+        <div class="lc-block">
+          <div editable="rich">
+            <p class="lead2">Dejo por aquí la forma en que puedes contactarme...</p>
+            <p class="lead2">¡Espero tu mensaje!</p>
+          </div>
+        </div>
+
+        <div class="lc-block">
+          <svg onclick="if (!document.querySelector('body').classList.contains('livecanvas-is-editing') ) this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });" width="4em" height="4em" viewBox="0 0 16 16" class="text-light" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
+          </svg>
+
+          <!-- for Safari support only, remove if you want  -->
+          <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+        </div>
+      </div>
+    </div>
+
+  <!-- Inicio de FORM DE CONTACT-->
+<section class="container">
+          <p class="display-4 fw-bold rfs-12"> Respondere lo antes posible</p>                              
+          <form>
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form4Example1" class="form-control"/>
+              <label class="lead3" for="form4Example1">Nombre</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form4Example2" class="form-control"/>
+              <label class="lead3" for="form4Example2">Email</label>
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form4Example3" rows="4">Que te gustaría comentar...</textarea>
+              <label class="lead3" for="form4Example3">Mensaje</label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+              <label class="form-check-label" for="form4Example4">
+                Enviarme una copia del mensaje
+              </label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+          </form>
+  <!-- Fin SECCION Fromulario-->                        
+</section>
+
+<!-- Inicio del footer-->
+<!-- INICIO DE INFO + MAPA-->
+<footer>
+ <div calss="container"> 
+  <div class="container-fluid bg-dark g-0">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div class="col-12 col-lg-8 p-4 text-white">
+          <div class="lc-block">
+            <div editable="rich">
+              <h2 class="fw-bolder">Horarios de trabajo</h2>
+            </div>
+          </div>
+          <div class="lc-block">
+            <div editable="rich">
+              <p class="lead2 fw-light">Lunes a Viernes: 09:00 – 18:00 <br>Sábados: 10:00 – 14:00</p>
+            </div>
+          </div>
+
+          <div class="lc-block">
+            <div editable="rich">
+              <h2 class="fw-bolder">Dirección</h2>
+            </div>
+          </div>
+          <div class="lc-block">
+            <div editable="rich">
+              <p class="lead2 fw-light">Av. Colón 1800 -&nbsp;Córdoba&nbsp;NC <br>Córdoba, Argentnia.</p>
+            </div>
+          </div>
+
+          <div class="lc-block">
+            <div editable="rich">
+              <h2 class="fw-bolder">Teléfonos</h2>
+            </div>
+          </div>
+
+          <div class="lc-block">
+            <div editable="rich">
+              <p class="lead2 fw-light">Fijo: +543514684989<br>Whtasapp +5493516653334</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="lc-block">
+          <div class="ratio ratio-16x9" lc-helper="gmap-embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.2870198594387!2d-64.20907648530658!3d-31.406217302901787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988ffdee7339%3A0x2f043916e0ef9d80!2sAv.%20Col%C3%B3n%201800%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1642617208359!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div><!-- /lc-block -->
+      </div>
+    </div>
+  </div>
+</div>   
+  <!-- FIN DE INFO + MAPA-->  
+  <!-- Inicio del Footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col align-self-start">
+        <h3 class="display-4 fw-bold">Sígueme!</h3>
+        <h6 class="display-6 fw-light"><br>Visita mis redes sociales...</h6>
+      </div>
+    </div>
+</div><!-- /lc-block --> <!-- /lc-block -->
+<div class="conatiner">
+    <div class="container-fluid py-5">
+      <div class="row text-center">
+         <div class="col-md-4">
+            <div class="lc-block mb-5">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="3em" height="3em" lc-helper="svg-icon" fill="currentColor">
+                  <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+               </svg>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block mb-4">
+               <div editable="rich">
+                  <p><a href="http://https://www.facebook.com/LucasFerreyraOK" class="h3 text-dark text-decoration-none">Facebook</a></p>
+               </div>
+            </div>
+            <div class="lc-block col-2 offset-5 border-bottom border-2 border-dark">
+               <div editable="rich">
+               </div>
+            </div>
+            <!-- /lc-block -->
+         </div>
+         <!-- /col -->
+         <div class="col-md-4 ">
+            <div class="lc-block mb-5">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3em" height="3em" lc-helper="svg-icon" fill="currentColor">
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+               </svg>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block mb-4">
+               <div editable="rich">
+                  <p><a href="https://www.linkedin.com/in/lucasferreyra" class="h3 text-dark text-decoration-none">Linkedin</a></p>
+               </div>
+            </div>
+            <div class="lc-block col-2 offset-5 border-bottom border-2 border-dark">
+               <div editable="rich">
+               </div>
+            </div>
+            <!-- /lc-block -->
+         </div>
+         <!-- /col -->
+         <div class="col-md-4">
+            <div class="lc-block mb-5">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="3em" height="3em" lc-helper="svg-icon" fill="currentColor">
+                  <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+               </svg>
+            </div>
+            <!-- /lc-block -->
+            <div class="lc-block mb-4">
+               <div editable="rich">
+                  <p><a href="https://twitter.com/lferreyra?lang=es" class="h3 text-dark text-decoration-none">Twitter</a></p>
+               </div>
+            </div>
+            <div class="lc-block col-2 offset-5 border-bottom border-2 border-dark">
+               <div editable="rich">
+               </div>
+            </div>
+            <!-- /lc-block -->
+         </div>
+         <!-- /col -->
+
+      </div>
+   </div>
+</div>  
+</footer>
+  <!-- fin del footer-->     
+  <!-- script bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>       
+  </body>
+  <!-- fin del Body-->
+  </html>

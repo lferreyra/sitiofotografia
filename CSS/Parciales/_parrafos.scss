@@ -1,23 +1,30 @@
 p{
-    color:rgb(255, 255, 255);
+    
     line-height: 1.6;
-    font-size: 15px;
+
     font-style:normal;
     font-family: "open-sans", sans-serif;
-    padding: 0px 50px 0px 50px;
-    text-align:center;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+    text-align:absolute;
 
  
     }
     
-    .p--lead{
-        color: black; 
-        font-style: normal;
-        font-family: "open-sans", sans-serif;
-        text-align:start;
 
-    }
 .lead {
-        font-size: 5.25rem;
+        font-size: 1.5rem;
         FONT-WEIGHT: 100; 
+        color: #000
  }
+.lead2 {
+    font-size: 1.5rem;
+    FONT-WEIGHT: 100; 
+    color: rgb(255, 255, 255)
+}
+
+
+.lead3 {
+    font-size: 1.5rem;
+    FONT-WEIGHT: 100; 
+    color: #000
+}

@@ -27,10 +27,6 @@ html {
   text-align: center;
 }
 
-.container {
-  padding: 5rem 0rem 5rem 0rem;
-}
-
 H2 > display-6 {
   color: black;
 }
@@ -233,18 +229,9 @@ H2 > display-6 {
 
 /* Fin de Hero */
 /* Inicio de Tipografia */
-h1 {
-  color: white;
-  font-size: 5,25rem;
-  font-style: normal;
-  font-family: "open-sans", sans-serif;
-  padding: 0px;
-}
-
-/* primer comentario*/
-h2 {
-  color: white;
-  font-size: 30px;
+.inline {
+  color: black;
+  font-size: 3.25rem;
   font-style: normal;
   font-family: "open-sans", sans-serif;
   padding: 0px;
@@ -257,25 +244,29 @@ h2 {
 /* FIn de Tipografia */
 /* elementos de parrafos */
 p {
-  color: white;
   line-height: 1.6;
-  font-size: 15px;
   font-style: normal;
   font-family: "open-sans", sans-serif;
-  padding: 0px 50px 0px 50px;
-  text-align: center;
-}
-
-.p--lead {
-  color: black;
-  font-style: normal;
-  font-family: "open-sans", sans-serif;
-  text-align: start;
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  text-align: absolute;
 }
 
 .lead {
-  font-size: 5.25rem;
+  font-size: 1.5rem;
   FONT-WEIGHT: 100;
+  color: #000;
+}
+
+.lead2 {
+  font-size: 1.5rem;
+  FONT-WEIGHT: 100;
+  color: white;
+}
+
+.lead3 {
+  font-size: 1.5rem;
+  FONT-WEIGHT: 100;
+  color: #000;
 }
 
 /* FIN de elementos de parrafos */
@@ -313,7 +304,8 @@ body {
 
 .container-fluid,
 .container {
-  max-width: 1200px;
+  max-width: 100%;
+  padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 .card-container {
